@@ -5,24 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarChart</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
   </head>
   <body>
+    <div class="content">
+      <input type="text" id="xValue" placeholder="값을 입력해주세요" />
+      <button type="button" id="btnAdd">추가</button>
+      <button type="button" id="btnDel">전체삭제</button>
+    </div>
     <div class="wrapper">
-      <svg id="chart" class="chart" width="500" height="500">
-        <rect width="19" height="10" x="0" y="490"></rect>
-        <rect width="19" height="10" x="20" y="490"></rect>
-        <rect width="19" height="10" x="40" y="490"></rect>
-        <rect width="19" height="20" x="60" y="480"></rect>
-        <rect width="19" height="30" x="80" y="470"></rect>
-        <rect width="19" height="40" x="100" y="460"></rect>
-        <text width="19" height="10" x="5" y="490">1</text>
-        <text width="19" height="10" x="25" y="490">2</text>
-        <text width="19" height="10" x="45" y="490">3</text>
-        <text width="19" height="20" x="65" y="480">4</text>
-        <text width="19" height="30" x="85" y="470">5</text>
-        <text width="19" height="40" x="105" y="460">6</text>
-      </svg>
+      <svg id="chart" width="500" height="500"></svg>
     </div>
   </body>
+  <script src="app.js"></script>
 </html>

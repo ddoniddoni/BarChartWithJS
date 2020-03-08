@@ -1,15 +1,39 @@
 @import "reset.css";
 
-.chart {
-  background-color: yellow;
-  margin-top: 100px;
+#chart {
+  background-color: #30a9de;
+  margin-top: 10px;
+  border: solid 5px #efdc05;
 }
 
-.chart rect {
-  fill: steelblue;
+#chart rect {
+  fill: #e53a40;
+  stroke: #fffff3;
+  stroke-width: 1px;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
+}
+
+#chart text {
+  fill: #efdc05;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#btnAdd,
+#btnDel {
+  margin-left: 20px;
+  border: 1px solid skyblue;
+  background-color: rgba(0, 0, 0, 0);
+  color: skyblue;
+  padding: 5px;
 }
