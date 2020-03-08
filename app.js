@@ -1,6 +1,4 @@
 const svg = document.getElementById("chart");
-const xPlace = 20;
-const yPlace = 500;
 
 const btnAdd = document.getElementById("btnAdd");
 const btnDel = document.getElementById("btnDel");
@@ -29,17 +27,15 @@ const addRect = () => {
 
   text.innerHTML = document.getElementById("xValue").value;
 
-  console.log(svg.childElementCount);
-
   xValue.value = "";
   xValue.focus();
 };
 
-const delLastEle = () => {
+const delRect = () => {
   while (svg.firstChild) {
     svg.removeChild(svg.firstChild);
   }
 };
 
 btnAdd.addEventListener("click", addRect);
-btnDel.addEventListener("click", delLastEle);
+btnDel.addEventListener("click", delRect);
